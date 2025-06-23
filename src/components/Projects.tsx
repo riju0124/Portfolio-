@@ -1,30 +1,29 @@
-
-import { Link, Github, Code, Database } from "lucide-react";
+import { Github, Code } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "RAGEMP SERVER",
-      description: "A custom RAGE:MP roleplay server built with a full-stack architecture, featuring dynamic systems such as jobs, housing, banking, and player-owned businesses. Designed with a focus on immersive gameplay, real-time interactions, and a modular CEF UI powered by HTML, CSS, and JavaScript for a smooth user experience.",
-      tech: ["Java Script", "React", "MongoDB", "C#"],
-      image: "",
-      demo: "#",
+      title: "Heaven Roleplay – RAGE:MP Server",
+      description:
+        "Heaven Roleplay was one of the most recognized RAGE:MP servers, known for its immersive roleplay, polished CEF UI, and fully custom systems like jobs, banking, housing, and businesses. Built using a scalable full-stack setup with C# and JavaScript.",
+      tech: ["C#", "JavaScript", "MongoDB", "CEF UI"],
+      image: "/images/heavenrp.png", 
       github: "#"
     },
     {
-      title: "TEST TEST TEST",
-      description: "A collaborative project management tool with real-time updates, built using React, TypeScript, and Firebase with drag-and-drop functionality.",
-      tech: ["React", "TypeScript", "Firebase", "Material-UI"],
-      image: "",
-      demo: "#",
+      title: "Personal Portfolio Website",
+      description:
+        "My professional developer portfolio showcasing projects, about me, and contact details. Designed with a modern 2025-style layout, advanced animations, and clean UI using TypeScript and Tailwind CSS.",
+      tech: ["TypeScript", "React", "Tailwind CSS"],
+      image: "/images/portfolio-preview.png", 
       github: "#"
     },
     {
-      title: "TEST TEST",
-      description: "A comprehensive analytics dashboard for social media management with data visualization, automated reporting, and multi-platform integration.",
-      tech: ["Vue.js", "Express.js", "MongoDB", "Chart.js"],
-      image: "",
-      demo: "#",
+      title: "??? Secret RAGE:MP Project",
+      description:
+        "Currently working on something big... a new RAGE:MP server with unique features. Nope, not Heaven RP 2.0 😏 — and sorry, the name is still under wraps. Coming soon!",
+      tech: ["C#", "CEF UI", "MySQL"],
+      image: "/images/secret-project.jpg", 
       github: "#"
     }
   ];
@@ -34,7 +33,10 @@ export const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Featured <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Projects</span>
+            Featured{" "}
+            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Full-stack applications that demonstrate modern web development practices and scalable architecture.
@@ -52,16 +54,16 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 right-4">
                   <Code className="h-6 w-6 text-purple-400 bg-black/20 p-1 rounded backdrop-blur-sm" />
                 </div>
               </div>
 
-              <div className="p-6">
+              <div className="p-5">
                 <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
+                <p className="text-gray-300 mb-4 leading-relaxed text-sm">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
@@ -74,17 +76,10 @@ export const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex space-x-4">
-                  <a
-                    href={project.demo}
-                    className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-center py-2 rounded-lg font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all flex items-center justify-center space-x-2"
-                  >
-                    <Link className="h-4 w-4" />
-                    <span>Live Demo</span>
-                  </a>
+                <div className="flex justify-end">
                   <a
                     href={project.github}
-                    className="flex-1 border border-purple-500 text-purple-400 text-center py-2 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition-colors flex items-center justify-center space-x-2"
+                    className="flex items-center space-x-2 border border-purple-500 text-purple-400 text-sm py-2 px-4 rounded-lg hover:bg-purple-600 hover:text-white transition-colors"
                   >
                     <Github className="h-4 w-4" />
                     <span>GitHub</span>

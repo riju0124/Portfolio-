@@ -69,31 +69,37 @@ const Hero = ({ onScrollToNext }: HeroProps) => {
             Passionate about creating beautiful, functional, and user-centered digital experiences.
             <br />
             <span className="bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent font-medium">
-              Specializing in React • Node.js • TypeScript • Cloud Architecture
+              Specializing in C# • Node.js • TypeScript • React • Java Script
             </span>
           </p>
         </div>
 
-        {/* Enhanced CTA buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-          <button 
-            onClick={onScrollToNext}
-            className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-violet-600 rounded-2xl font-semibold text-white overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-2xl shadow-purple-500/25"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              View My Work
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-          </button>
-          
-          <button className="group px-8 py-4 border-2 border-purple-400/50 text-purple-300 rounded-2xl font-semibold hover:bg-purple-400/10 hover:border-purple-400 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
-            <span className="flex items-center gap-2">
-              <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-300" />
-              Download CV
-            </span>
-          </button>
-        </div>
+       {/* Enhanced CTA buttons */}
+<div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+  {/* View My Work */}
+  <a
+    href="#projects"
+    className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-violet-600 rounded-2xl font-semibold text-white overflow-hidden transform hover:scale-105 transition-all duration-300 shadow-2xl shadow-purple-500/25"
+  >
+    <span className="relative z-10 flex items-center gap-2">
+      View My Work
+      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+    </span>
+    <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+  </a>
+
+  {/* Download CV */}
+  <button
+    onClick={() => alert("CV not available yet.")}
+    className="group px-8 py-4 border-2 border-purple-400/50 text-purple-300 rounded-2xl font-semibold hover:bg-purple-400/10 hover:border-purple-400 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+  >
+    <span className="flex items-center gap-2">
+      <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-300" />
+      Download CV
+    </span>
+  </button>
+</div>
+
 
         {/* Social links */}
         <div className="flex justify-center gap-6 mb-12">
