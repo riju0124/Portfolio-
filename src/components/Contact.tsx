@@ -300,9 +300,7 @@ const Contact: React.FC = () => {
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-purple-500/20 p-8">
               <h3 className="text-2xl font-bold text-white mb-4">Let's Build Something Amazing</h3>
               <p className="text-gray-300 leading-relaxed">
-                I'm currently available for freelance projects and full-time opportunities. 
-                Whether you need a complete web application, mobile app, or just want to discuss 
-                your ideas, I'd love to hear from you.
+
               </p>
             </div>
           </div>
