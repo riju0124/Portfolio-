@@ -98,10 +98,10 @@ const Hero = ({ onScrollToNext }: HeroProps) => {
         {/* Social links */}
         <div className="flex justify-center gap-6 mb-12">
 {[
-  { icon: Github, href: '#', label: 'GitHub', username: 'alexjohnson' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn', username: 'alex-johnson' },
-  { icon: Mail, href: 'mailto:alex@example.com', label: 'Email', username: 'alex@example.com' },
-  { icon: Instagram, href: '#', label: 'Instagram', username: '@alexjohnson' } // ← added
+  { icon: Github, href: 'https://github.com/riju0124', label: 'GitHub', username: 'riju0124' },
+  // { icon: Linkedin, href: '#', label: 'LinkedIn', username: 'alex-johnson' },  
+  { icon: Mail, href: 'mailto:alex@example.com', label: 'Email', username: 'riju@gmail.com' },
+  { icon: Instagram, href: 'https://www.instagram.com/riju_naskar001', label: 'Instagram', username: 'riju_naskar001' } // ← added
 ].map(({ icon: Icon, href, label, username }) => (
 
             <a

@@ -21,7 +21,7 @@ export const About = () => {
             </p>
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="text-center p-4 bg-purple-900/30 border border-purple-500/20 rounded-lg backdrop-blur-sm">
-                <div className="text-2xl font-bold text-purple-400">1+</div>
+                <div className="text-2xl font-bold text-purple-400">2+</div>
                 <div className="text-gray-400">Years Experience</div>
               </div>
               <div className="text-center p-4 bg-pink-900/30 border border-pink-500/20 rounded-lg backdrop-blur-sm">
@@ -30,13 +30,12 @@ export const About = () => {
               </div>
             </div>
           </div>
-
-          <div className="relative">
-            <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 border border-purple-500/20 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300 backdrop-blur-sm">
+          <div className="relative flex items-center justify-center">
+            <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 border border-purple-500/20 rounded-full p-1 transform hover:rotate-0 transition-transform duration-300 backdrop-blur-sm w-72 h-72 rotate-3">
               <img
-                src="/images/my-dp.png"
-                alt="Full-stack development workspace"
-                className="rounded-xl shadow-lg w-full h-64 object-cover"
+                src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-a4d0-61fd-8026-f9f027fdc676/raw?se=2025-06-23T15%3A08%3A26Z&sp=r&sv=2024-08-04&sr=b&scid=0101d1de-e94b-56bc-90b4-ede1f55d8f5a&skoid=c953efd6-2ae8-41b4-a6d6-34b1475ac07c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-23T13%3A51%3A18Z&ske=2025-06-24T13%3A51%3A18Z&sks=b&skv=2024-08-04&sig=etsZRJqJzz9tAKiB1qb9ADX08JoWHCZWpb09tSthSps%3D"
+                alt="Profile"
+                className="rounded-full shadow-lg w-full h-full object-cover"
               />
             </div>
           </div>
